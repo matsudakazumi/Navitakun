@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dip" >
+
+    <LinearLayout
+        android:id="@+id/ListLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="2dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="0dip" >
+
+        <LinearLayout
+            android:id="@+id/ListLayout02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/listRow01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/idSaveMemo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="15dip"
+                    android:text="@string/saveMemo"
+                    android:textColor="#F7F7F7"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/listRow02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/idSaveDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:paddingTop="1dip"
+                    android:paddingLeft="15dip"
+                    android:text="@string/saveDatetime"
+                    android:textColor="#F7F7F7"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/listRow03"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/idSaveAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:paddingTop="1dip"
+                    android:paddingLeft="15dip"
+                    android:text="@string/saveAddress"
+                    android:textColor="#F7F7F7"
+                    android:textSize="16sp" />
+            </TableRow>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:src="@drawable/details" />
+    </LinearLayout>
+
+</FrameLayout>

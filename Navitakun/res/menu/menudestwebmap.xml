@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 現在地を更新するメニュー -->
+    <item
+        android:id="@+id/menu_updateCurrentLocation"
+        android:title="@string/menu_upd_current_location"
+        android:icon="@android:drawable/ic_menu_rotate" />
+
+    <!-- 目的地を消すメニュー -->
+    <item
+        android:id="@+id/menu_del"
+        android:title="@string/menu_del"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <!-- 目的地をメールするメニュー -->
+    <item
+        android:id="@+id/menu_mail"
+        android:title="@string/menu_mail"
+        android:icon="@android:drawable/ic_menu_send" />
+
+    <!-- この画面の操作方法メニュー -->
+    <item
+        android:id="@+id/menu_help"
+        android:title="@string/menu_help"
+        android:icon="@android:drawable/ic_menu_help" />
+
+</menu>

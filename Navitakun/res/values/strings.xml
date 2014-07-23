@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">なび太くん</string>
+
+    <string name="menu_upd_current_location">現在位置を更新</string>
+    <string name="menu_mail">目的地をメールで共有</string>
+    <string name="menu_del">目的地を消す</string>
+    <string name="menu_help">ヘルプ</string>
+
+    <string name="address">住所</string>
+    <string name="input_address">東京都台東区下谷1-13-6</string>
+    <string name="button_label1">ＮＡＶＩを始める</string>
+    <string name="button_label2">住所を入力</string>
+    <string name="button_label3">地図で指定</string>
+    <string name="button_label4">音声入力</string>
+    <string name="button_label5">入力した場所を目的地として設定する</string>
+    <string name="button_label6">経路表示</string>
+    <string name="button_label7">ＮＡＶＩ</string>
+    <string name="button_label8">現在位置を更新</string>
+    <string name="button_label9">履歴を見る</string>
+    <string name="button_label10">メモ編集</string>
+    <string name="button_label11">履歴削除</string>
+    <string name="button_label12">保存</string>
+    <string name="button_label13">目的地とメモ情報をメールで共有</string>
+
+    <string name="select_target">対象を選択してください</string>
+    <string name="cannot_get_address">住所の取得に失敗しました</string>
+    <string name="no_destination">目的地が設定されていません</string>
+    <string name="data_loading">データを取得しています</string>
+
+    <string name="hist_memo"></string>
+    <string name="date_title">【ＮＡＶＩ日時】</string>
+    <string name="dest_title">【目的地の住所】</string>
+    <string name="keiro_title">【経路】</string>
+    <string name="distance_title">【距離】</string>
+    <string name="memo_title">【メモ】</string>
+    <string name="blank"> </string>
+
+    <string name="saveMemo">【メモ】</string>
+    <string name="saveDatetime">【NAVI日時】</string>
+    <string name="saveAddress">【目的地住所】</string>
+
+    <string name="listTitle1"> ● <u>今までに歩いた距離</u></string>
+    <string name="listTitle2"> ● <u>ＮＡＶＩ履歴</u></string>
+
+</resources>

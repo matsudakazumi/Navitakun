@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/title_color">
+        <ImageView
+            android:id="@+id/titleImage"
+            android:layout_width="29dip"
+            android:layout_height="29dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="1dip"
+            android:paddingBottom="1dip"
+            android:layout_gravity="left"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:layout_gravity="left"
+            android:text="@string/app_name"
+            android:textColor="#FFEA00"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="7dip"
+            android:paddingBottom="5dip"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="ＮＡＶＩ履歴照会"
+            android:textSize="10sp"
+            android:textColor="#F7F7F7"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- メモ -->
+        <TextView
+            android:id="@+id/hist_memo"
+            android:text="@string/blank"
+            android:textSize="20dip"
+            android:textColor="#F7F7F7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="5dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <!-- 日付タイトル -->
+            <TextView
+                android:id="@+id/date_title"
+                android:textSize="18dip"
+                android:text="@string/date_title"
+                android:textColor="#A9A9A9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- 日付データ -->
+            <TextView
+                android:id="@+id/date_data"
+                android:textSize="16dip"
+                android:text="@string/blank"
+                android:textColor="#F7F7F7"
+                android:layout_marginLeft="30dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="5dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <!-- 目的地タイトル -->
+            <TextView
+                android:id="@+id/dest_title"
+                android:textSize="18dip"
+                android:text="@string/dest_title"
+                android:textColor="#A9A9A9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- 目的地データ -->
+            <TextView
+                android:id="@+id/dest_data"
+                android:textSize="16dip"
+                android:text="@string/blank"
+                android:textColor="#F7F7F7"
+                android:layout_marginLeft="30dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="5dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <!-- 経路タイトル -->
+            <TextView
+                android:id="@+id/keiro_title"
+                android:textSize="18dip"
+                android:textColor="#A9A9A9"
+                android:text="@string/keiro_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/keiro_data"
+                android:textSize="16dip"
+                android:text="@string/blank"
+                android:textColor="#F7F7F7"
+                android:layout_marginLeft="30dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="5dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <!-- 移動距離タイトル -->
+            <TextView
+                android:id="@+id/distance_title"
+                android:textSize="18dip"
+                android:text="@string/distance_title"
+                android:textColor="#A9A9A9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- 移動距離データ -->
+            <TextView
+                android:id="@+id/distance_data"
+                android:textSize="16dip"
+                android:text="@string/blank"
+                android:textColor="#F7F7F7"
+                android:layout_marginLeft="30dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="20dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/editButton"
+            android:paddingTop="3dip"
+            android:paddingRight="2dip"
+            android:paddingBottom="3dip"
+            android:layout_marginLeft="30dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_edit"
+            android:text="@string/button_label10"
+            android:textColor="@color/white"
+            android:background="@drawable/my_button" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:paddingTop="3dip"
+            android:paddingLeft="2dip"
+            android:paddingBottom="3dip"
+            android:layout_marginRight="30dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_delete"
+            android:text="@string/button_label11"
+            android:textColor="@color/white"
+            android:background="@drawable/my_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="6dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/mailButton"
+            android:paddingTop="3dip"
+            android:paddingLeft="2dip"
+            android:paddingBottom="3dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginLeft="30dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_send"
+            android:text="@string/button_label13"
+            android:textColor="@color/white"
+            android:background="@drawable/my_button"/>
+
+    </LinearLayout>
+
+    <!-- AdMob -->
+<!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="30dip"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <com.google.ads.AdView android:id="@+id/ad2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            ads:adUnitId="a14f9a05c327aaf"
+            ads:adSize="BANNER"
+            ads:loadAdOnCreate="true" />
+
+    </LinearLayout>
+-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:paddingTop="30dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.gms.ads.AdView android:id="@+id/ad2"
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            ads:adUnitId="a14f9a05c327aaf"
+            ads:adSize="BANNER"/>
+    </LinearLayout>
+
+</LinearLayout>
